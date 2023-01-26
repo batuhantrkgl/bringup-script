@@ -15,7 +15,7 @@ DEVICE_PATH=""
 DEVICE_CODENAME=""
 
 ## e.g: TREE_HAVE_DEPENDENCIES="true" if you have ***.dependecies in your device tree.
-TREE_HAVE_DEPENDECIES=""
+TREE_HAVE_DEPENDENCIES=""
 
 ## Bring-up to rom
 
