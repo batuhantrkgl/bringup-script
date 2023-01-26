@@ -14,11 +14,16 @@ DEVICE_PATH=""
 ## e.g: DEVICE_CODENAME="j7y17lte"
 DEVICE_CODENAME=""
 
+## e.g: TREE_HAVE_DEPENDENCIES="true" if you have ***.dependecies in your device tree.
+TREE_HAVE_DEPENDECIES=""
+
 ## Bring-up to rom
 
 cd ${DEVICE_PATH}
 mv ${TREE_BASED}_${DEVICE_CODENAME}.mk ${ROM}_${DEVICE_CODENAME}.mk 
-mv ${TREE_BASED}.dependecies ${ROM}.dependencies
+if [ "${TREEE_HAVE_DEPENDENCIES}" = "true" ]; then
+  mv ${TREE_BASED}.dependecies ${ROM}.dependencies
+fi
 nano ${ROM}_${DEVICE_CODENAME}.mk
 nano AndroidProducts.mk
 
