@@ -1,2 +1,4 @@
 # bringup-script
-a Simple Bringup-Script for Android Device Trees
+Just edit and use kek.
+
+source bringup.sh for start .-.
