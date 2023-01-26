@@ -20,5 +20,6 @@ cd ${DEVICE_PATH}
 mv ${TREE_BASED}_${DEVICE_CODENAME}.mk ${ROM}_${DEVICE_CODENAME}.mk 
 mv ${TREE_BASED}.dependecies ${ROM}.dependencies
 nano ${ROM}_${DEVICE_CODENAME}.mk
+nano AndroidProducts.mk
 
 cat "Completed."
